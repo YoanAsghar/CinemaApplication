@@ -57,3 +57,13 @@ src/
 This application is deployed on Vercel. Every push to the main branch triggers an automatic redeployment.
 View live app
 https://cinema-application-gfvn2kxc3-yoanasghars-projects.vercel.app/
+
+---
+
+##Execution
+
+
+
+https://github.com/user-attachments/assets/877e5c59-9220-4eb8-bfa9-14a58b4bbcda
+
+
