@@ -23,7 +23,7 @@ An Appwrite project with a database and collection set up
 
 Installation
 bash# Clone the repository
-git clone https://github.com/yourusername/cinemaapplication.git
+https://github.com/YoanAsghar/CinemaApplication
 
 # Navigate to the project folder
 cd cinemaapplication
