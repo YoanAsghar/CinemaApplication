@@ -1,8 +1,7 @@
  CinemaApplication
 A modern movie discovery web application built with React and powered by the TMDB API. Search for any movie, explore the most popular titles, and track trending searches in real time.
-Live Demo: Click here to view the app
 
- Features
+Features
 
 Movie Search — Search for any movie by title with a debounced input, so the app only fetches results once you stop typing, reducing unnecessary API calls.
 Popular Movies — On load, the app automatically fetches and displays the most popular movies at the moment using the TMDB Discover endpoint.
