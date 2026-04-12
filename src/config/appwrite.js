@@ -47,5 +47,6 @@ export async function fetchTrendingMovies(){
     return result.documents;
   }catch(err){
   console.log(err);
+  return [];
   }
 }

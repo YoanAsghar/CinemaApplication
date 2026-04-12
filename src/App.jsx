@@ -20,7 +20,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [movieList, setMovieList] = useState([]);
-  const [isLoading, setIsloading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [trendingMovies, setTrendingMovies] = useState([]);
 
   const [debouncedSearchTerm] = useDebounce(searchTerm, 500);
@@ -28,7 +28,7 @@ const App = () => {
 
     async function fetchMovies(query = ""){
       setErrorMessage('');
-      setIsloading(true);
+      setIsLoading(true);
       try{
         const endpoint = query 
         ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
@@ -39,11 +39,12 @@ const App = () => {
         if(!response.ok) throw new Error("Failed to fetch movies");
 
         const data = await response.json();
-        if(data.response == "False"){
-          setErrorMessage(data.Error || "Failed to fetch movies");
+        
+        if(!data.results) {
+          setErrorMessage("Failed to fetch movies");
           setMovieList([]);
           return;
-        } 
+        }
 
         setMovieList(data.results || []);
 
@@ -55,7 +56,7 @@ const App = () => {
         console.log(err);
         setErrorMessage("Error retrieving movies, please try again later");
       }finally{
-        setIsloading(false);
+        setIsLoading(false);
       }
     }
 
@@ -102,7 +103,7 @@ useEffect(() => {
                 {trendingMovies.map((movie, index) => (
                   <li key={movie.$id}>
                     <p>{index + 1}</p>
-                    <img src={movie.poster_url} alt="Movie.title"/>
+                    <img src={movie.poster_url} alt={movie.title}/>
                   </li>
                 ))}
               </ul>
