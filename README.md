@@ -1,8 +1,7 @@
  CinemaApplication
 A modern movie discovery web application built with React and powered by the TMDB API. Search for any movie, explore the most popular titles, and track trending searches in real time.
-Live Demo: Click here to view the app
 
- Features
+Features
 
 Movie Search — Search for any movie by title with a debounced input, so the app only fetches results once you stop typing, reducing unnecessary API calls.
 Popular Movies — On load, the app automatically fetches and displays the most popular movies at the moment using the TMDB Discover endpoint.
@@ -24,7 +23,7 @@ An Appwrite project with a database and collection set up
 
 Installation
 bash# Clone the repository
-git clone https://github.com/yourusername/cinemaapplication.git
+https://github.com/YoanAsghar/CinemaApplication
 
 # Navigate to the project folder
 cd cinemaapplication
@@ -58,3 +57,13 @@ src/
 This application is deployed on Vercel. Every push to the main branch triggers an automatic redeployment.
 View live app
 https://cinema-application-gfvn2kxc3-yoanasghars-projects.vercel.app/
+
+---
+
+##Execution
+
+
+
+https://github.com/user-attachments/assets/877e5c59-9220-4eb8-bfa9-14a58b4bbcda
+
+
